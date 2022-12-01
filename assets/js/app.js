@@ -3,8 +3,15 @@
  ---------------------------------------------------------------*/
 // jQuery
 $(document).ready(function() {
-
-    $('#navigation .menu').hide();
+    
+    $(function() { 
+	
+        var windowWidth= $(window).width();
+        if(windowWidth < 920){
+            alert("bien");
+        }
+           
+    });
     
 
     // afficher le menu et le btn-fermee 
@@ -20,13 +27,6 @@ $(document).ready(function() {
         
         $('#navigation .menu').hide();
         e.preventDefault();
-
-    })
-
-    // lorsqu'on click sur un lien du menu
-    $('#navigation .menu a.lien').click(function(e){
-        
-        $('#navigation .menu').hide();
 
     })
     
