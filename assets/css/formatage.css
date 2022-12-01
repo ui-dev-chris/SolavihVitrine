@@ -28,11 +28,17 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     color: #fff;
     background-color: #fff;
     border-bottom: 1px solid rgb(156, 156, 156);
     z-index: 11;
+}
+
+nav .sous-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* le logo */
